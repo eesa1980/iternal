@@ -1,0 +1,149 @@
+@import '../node_modules/bulma/css/bulma.min.css'; 
+
+//helpers 
+
+.bg-grey {
+  background:#F6F6F6;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.flex-helper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.columns {
+  margin-top: 0rem !important;
+}
+
+.container {
+  margin-right: 120px;
+}
+
+.box-container {
+  margin: 20px 40px;
+}
+
+// .box {
+//   .container {
+//     margin: 0 auto;
+//   }
+// }
+
+
+//
+
+
+.side-nav {
+  background: #62C88E;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 140px;
+
+  .menu-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+
+    a {
+
+      &:hover {
+        background:none;
+      }
+    }
+
+    .icon {
+      svg {
+        color:white;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  li {
+    text-align: center;
+  }
+
+  .top-nav {
+    margin-top:20px;
+    width:100px;
+    img {
+      width:100px;
+    }
+  }
+
+  .middle-nav,
+  .bottom-nav {
+    span {
+      margin: 20px 0px;
+    }
+  }
+}
+
+//home page scss
+
+.home-container {
+  max-width:100%;
+  margin-left:180px;
+  flex-grow:1;
+}
+
+.avatar-header {
+  h2 {
+    font-weight:bold;
+  }
+  .image {
+    margin:20px auto;
+
+  }
+  .upgrade-account {
+    margin-top:30px;
+  }
+}
+
+.recent-activity-section {
+  h2 {
+    margin-bottom: 30px;
+    font-weight:bold;
+  }
+  .media {
+    margin: 40px 30px 40px 0px;
+  }
+}
+
+.media-right {
+  text-align: right;
+  p {
+    font-weight:bold;
+  }
+}
+
+//memory page
+
+.memory-section {
+  margin-top: 50px;
+    .box {
+      border-left: 10px solid #62C88E;
+    }
+}
+
+.share-icons {
+  svg {
+   color: #62C88E;
+   font-size:2em;
+   margin-right: 0.5em;
+  }
+}
